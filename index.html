@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Kayk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h1>Sobre mim</h1>
+            <p>Olá, eu sou o Kayk. Sou um desenvolvedor de software com foco na construção de aplicações robustas. Atualmente, busco minha primeira oportunidade profissional como desenvolvedor júnior ou estagiário.</p>
+            <p>Meu foco técnico principal é no ecossistema Java, trabalhando com backend em Spring Boot, integrações de banco de dados com PostgreSQL, e desenvolvimento frontend utilizando React. Sou apaixonado por tecnologia de ponta a ponta, desde a configuração do meu ambiente de trabalho customizado no Arch Linux até o estudo de modelos locais de Inteligência Artificial.</p>
+            <p>Fora do código, dedico meu tempo à leitura, como O Guia do Mochileiro das Galáxias, focando em aprimorar meu inglês, e gosto de relaxar com jogos estratégicos e competitivos.</p>
+        </section>
+
+        <section id="formacao">
+            <h1>Formação</h1>
+            <div class="card-formacao">
+                <h2>Engenharia de Software</h2>
+                <p>UNINTER (Em andamento)</p>
+            </div>
+
+            <div class="card-formacao">
+                <h2>Cursos Complementares</h2>
+                <p>Trilhas de desenvolvimento, estrutura de dados e IA Generativa (freeCodeCamp).</p>
+            </div>
+            <div class="card-formacao">
+                <h2>Idiomas</h2>
+                <p>Inglês - Em desenvolvimento (Leitura e imersão).</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h1>Portfólio</h1>
+            <p>Confira meus principais projetos em desenvolvimento e acesse meu <a href="https://github.com/KaykMurphy" target="_blank">repositório no GitHub</a>.</p>
+            
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <h3>Projeto LootSafe</h3>
+                    <p>Desenvolvimento de um backend focado em segurança para gerenciamento de APIs e processamento de transações, incluindo filtros de segurança e integração via webhook do Mercado Pago.</p>
+                </div>
+                
+                <div class="projeto-card">
+                    <h3>Projeto NovaQ</h3>
+                    <p>E-commerce marketplace em construção. O sistema utiliza uma arquitetura com backend em Java para lógica de carrinho e registro de usuários, integrado a um banco PostgreSQL, e frontend em React.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h1>Contato</h1>
+            <p>Você pode me encontrar através do e-mail: <strong>kayksantana133@gmail.com</strong></p>
+            <p>Ou envie uma mensagem diretamente pelo formulário abaixo:</p>
+            
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                </div>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
