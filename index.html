@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Kayk</title>
+    <!-- Link para a folha de estilo externa -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cabeçalho fixo com menu de navegação -->
     <header>
         <nav>
+            <!-- Lista de links que apontam para as seções da página -->
             <ul>
                 <li><a href="#sobre">Sobre mim</a></li>
                 <li><a href="#formacao">Formação</a></li>
@@ -18,7 +21,9 @@
         </nav>
     </header>
 
+    <!-- Conteúdo principal do site -->
     <main>
+        <!-- Seção "Sobre mim" - apresentação pessoal -->
         <section id="sobre">
             <h1>Sobre mim</h1>
             <p>Olá, eu sou o Kayk. Sou um desenvolvedor de software com foco na construção de aplicações robustas. Atualmente, busco minha primeira oportunidade profissional como desenvolvedor júnior ou estagiário.</p>
@@ -26,6 +31,7 @@
             <p>Fora do código, dedico meu tempo à leitura, como O Guia do Mochileiro das Galáxias, focando em aprimorar meu inglês, e gosto de relaxar com jogos estratégicos e competitivos.</p>
         </section>
 
+        <!-- Seção "Formação" - cards com formação acadêmica e cursos -->
         <section id="formacao">
             <h1>Formação</h1>
             <div class="card-formacao">
@@ -43,10 +49,12 @@
             </div>
         </section>
 
+        <!-- Seção "Portfólio" - grid com os projetos desenvolvidos -->
         <section id="portfolio">
             <h1>Portfólio</h1>
             <p>Confira meus principais projetos em desenvolvimento e acesse meu <a href="https://github.com/KaykMurphy" target="_blank">repositório no GitHub</a>.</p>
             
+            <!-- Container que organiza os cards de projetos em coluna -->
             <div class="projetos-grid">
                 <div class="projeto-card">
                     <h3>Projeto LootSafe</h3>
@@ -60,11 +68,13 @@
             </div>
         </section>
 
+        <!-- Seção "Contato" - formulário de contato com validação via JavaScript -->
         <section id="contato">
             <h1>Contato</h1>
             <p>Você pode me encontrar através do e-mail: <strong>kayksantana133@gmail.com</strong></p>
             <p>Ou envie uma mensagem diretamente pelo formulário abaixo:</p>
             
+            <!-- Formulário com id="contactForm" utilizado pelo script.js para validação -->
             <form id="contactForm">
                 <div class="form-group">
                     <label for="nome">Nome:</label>
@@ -86,6 +96,7 @@
         </section>
     </main>
 
+    <!-- Script JavaScript externo para validação do formulário -->
     <script src="script.js"></script>
 </body>
 </html>

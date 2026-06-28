@@ -1,3 +1,4 @@
+/* Reset global: remove margens e paddings padrão, aplica box-sizing border-box e fonte base */
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,14 @@
     scroll-behavior: smooth;
 }
 
+/* Estilo do body: cor de fundo, cor do texto e espaçamento entre linhas */
 body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
 }
 
+/* Cabeçalho fixo no topo da página com fundo escuro */
 header {
     background-color: #2c3e50;
     position: fixed;
@@ -20,6 +23,7 @@ header {
     z-index: 1000;
 }
 
+/* Menu de navegação: lista sem marcadores, centralizada com flexbox */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -27,10 +31,12 @@ nav ul {
     padding: 15px 0;
 }
 
+/* Espaçamento lateral entre os itens do menu */
 nav ul li {
     margin: 0 15px;
 }
 
+/* Estilo dos links do menu: brancos, sem sublinhado, fonte em negrito */
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -39,15 +45,18 @@ nav ul li a {
     padding: 5px 10px;
 }
 
+/* Efeito hover nos links do menu */
 nav ul li a:hover {
     background-color: #34495e;
     border-radius: 5px;
 }
 
+/* Margem superior no main para compensar o header fixo */
 main {
     margin-top: 60px;
 }
 
+/* Cada seção ocupa a altura total da viewport, com padding e largura máxima */
 section {
     min-height: 100vh;
     padding: 80px 20px;
@@ -56,21 +65,25 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
+/* Título principal: cor escura, centralizado */
 h1 {
     color: #2c3e50;
     margin-bottom: 20px;
     text-align: center;
 }
 
+/* Título secundário: cor azul */
 h2 {
     color: #2980b9;
 }
 
+/* Parágrafos: espaçamento inferior e alinhamento justificado */
 p {
     margin-bottom: 15px;
     text-align: justify;
 }
 
+/* Card de formação: fundo branco, bordas arredondadas e sombra sutil */
 .card-formacao {
     background: #fff;
     padding: 15px;
@@ -79,6 +92,7 @@ p {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Grid de projetos: layout em coluna com espaçamento entre os cards */
 .projetos-grid {
     display: flex;
     flex-direction: column;
@@ -86,6 +100,7 @@ p {
     margin-top: 20px;
 }
 
+/* Card de projeto: fundo branco, borda lateral azul e sombra */
 .projeto-card {
     background: #fff;
     padding: 20px;
@@ -94,11 +109,13 @@ p {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Links gerais: cor azul e negrito */
 a {
     color: #2980b9;
     font-weight: bold;
 }
 
+/* Formulário: fundo branco, padding interno, bordas arredondadas e sombra */
 form {
     background: #fff;
     padding: 30px;
@@ -106,16 +123,19 @@ form {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Grupo de campo do formulário: espaçamento entre os campos */
 .form-group {
     margin-bottom: 20px;
 }
 
+/* Label do formulário: exibido em bloco, negrito */
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
+/* Campos de input e textarea: largura total, padding e borda arredondada */
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -124,6 +144,7 @@ input, textarea {
     font-size: 1rem;
 }
 
+/* Botão de envio: fundo azul, texto branco, largura total */
 button {
     background-color: #2980b9;
     color: white;
@@ -135,6 +156,7 @@ button {
     width: 100%;
 }
 
+/* Efeito hover no botão: mudança de cor de fundo */
 button:hover {
     background-color: #2c3e50;
 }
